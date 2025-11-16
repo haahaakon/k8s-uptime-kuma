@@ -3,6 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
   name: kuma-data-01
   namespace: kuma
+  annotations:
+    nfs.io/storage-path: "kuma-data-01"
 spec:
   accessModes:
     - ReadWriteOnce

@@ -30,7 +30,7 @@ spec:
               containerPort: 3001
               protocol: TCP
           volumeMounts:
-            - name: kuma-data
+            - name: kuma-data-01
               mountPath: /app/data
       volumes:
         - name: kuma-data-01

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: kuma-data
+  name: kuma-data-01
   namespace: kuma
 spec:
   accessModes:

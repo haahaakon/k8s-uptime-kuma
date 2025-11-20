@@ -4,7 +4,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     cert-manager.io/dns01-provider: "cloudflare"
-  namespace: default
+  namespace: kuma
   name: kuma-gw
 spec:
   gatewayClassName: eg

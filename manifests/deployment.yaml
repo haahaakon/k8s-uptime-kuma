@@ -13,10 +13,6 @@ spec:
       labels:
         app: uptime-kuma
     spec:
-      securityContext:
-        fsGroup: 1000
-        runAsUser: 1000
-        runAsNonRoot: true
       containers:
         - name: uptime-kuma
           image: louislam/uptime-kuma:latest

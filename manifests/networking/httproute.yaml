@@ -5,7 +5,7 @@ metadata:
   namespace: kuma
 spec:
   parentRefs:
-    - name: eg
+    - name: kuma-gw
       namespace: default
   hostnames:
     - "uptime.br0.no"

@@ -13,15 +13,6 @@ spec:
       labels:
         app: uptime-kuma
     spec:
-      initContainers:
-      - name: fix-permissions
-        image: busybox:latest
-        command: ['sh', '-c', 'chown -R 1000:1000 /app/data']
-        volumeMounts:
-        - mountPath: /app/data
-          name: kuma-data-01
-        securityContext:
-          runAsUser: 0
       securityContext:
         fsGroup: 1000
         runAsUser: 1000

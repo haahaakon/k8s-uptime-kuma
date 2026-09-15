@@ -9,7 +9,6 @@ spec:
   gatewayClassName: eg
   infrastructure:
     annotations:
-      metallb.universe.tf/address-pool: ipv6-default
   listeners:
     - name: http
       protocol: HTTP
